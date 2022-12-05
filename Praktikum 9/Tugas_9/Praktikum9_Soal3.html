@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soal 3</title>
+</head>
+<body>
+    <h3>Menghitung Biaya Parkir</h3>
+
+        <input type="number" id="masuk" placeholder=" Jam Masuk">
+        <br><br>
+        <input type="number" id="keluar" placeholder="Jam Keluar">
+        <input type="button" value="=" onclick="parkir();">
+        <br><br>
+        <input type="text" id="biaya" placeholder="Biaya">
+
+     <script>
+        function parkir() {
+            let m = document.getElementById("masuk").value;
+            let k = document.getElementById("keluar").value;
+            let t = k - m;
+
+            let tarif_awal = 3000;
+            let selisih_waktu = Math.round(t - 2);
+            let tarif_lanjut = selisih_waktu * 1000;
+            let total_tarif = tarif_awal + tarif_lanjut;
+
+            document.getElementById("biaya").value = "Rp." + total_tarif;
+        }
+    </script>
+</body>
+</html>
