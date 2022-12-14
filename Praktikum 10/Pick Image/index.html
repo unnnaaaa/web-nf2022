@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Picker</title>
+</head>
+<style>
+    *{
+        font-family:fantasy;
+        color: lightsalmon;
+        text-align: center;
+    }
+    body{
+        background: url(img/svt.jfif);
+        background-size: auto;
+        background-color: bisque;
+    }
+    select{
+        border-radius: 10px;
+        background-color: #ffd2ff;
+    }
+</style>
+<body>
+    <select id="selectImg" onchange="imgPicker()">
+        <option value="">-- Pick a Member --</option>
+        <option value="sc">SCoups</option>
+        <option value="jh">Jeonghan</option>
+        <option value="js">Joshua</option>
+        <option value="jn">Jun</option>
+        <option value="hs">Hoshi</option>
+        <option value="wn">Wonwoo</option>
+        <option value="wz">Woozi</option>
+        <option value="mh">The8</option>
+        <option value="mg">Mingyu</option>
+        <option value="dk">Dokyeom</option>
+        <option value="sk">Seungkwan</option>
+        <option value="vn">Vernon</option>
+        <option value="dn">Dino</option>
+    </select>
+    <figure>
+        <img id="imgFigure" src="img" alt="">
+    </figure>
+    <script src="pict.js"></script>
+</body>
+</html>
