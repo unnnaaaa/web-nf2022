@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">   
+</head>
+<style>
+    body{
+        background-image: url(img/svt.jfif);
+    }
+    nav{
+        background-color: transparent;
+        border-radius: 1cm;
+
+    }
+    h3{
+        background-color: whitesmoke;
+        border-radius: 1cm;
+    }
+    .lead{
+        background-color: aliceblue;
+        border-radius: 0.5cm;
+    }
+</style>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <nav class="navbar navbar-expand-lg">
+                     
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="navbar-toggler-icon"></span>
+                    </button> <a class="navbar-brand" href="#">SEVENTEEN</a>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                 <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                 <a class="nav-link" href="#">NEWS</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                 <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown">EVENT</a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                     <a class="dropdown-item" href="#">Action</a> <a class="dropdown-item" href="#">Another action</a> <a class="dropdown-item" href="#">Something else here</a>
+                                    <div class="dropdown-divider">
+                                    </div> <a class="dropdown-item" href="#">Separated link</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <form class="form-inline">
+                            <input class="form-control mr-sm-2" type="text" /> 
+                            <button class="btn btn-primary my-2 my-sm-0" type="submit">
+                                Search
+                            </button>
+                        </form>
+                        <ul class="navbar-nav ml-md-auto">
+                            <li class="nav-item active">
+                                 <a class="nav-link" href="#">SEARCH <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                 <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown">PROFILE</a>
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                                     <a class="dropdown-item" href="#">Action</a> <a class="dropdown-item" href="#">Another action</a> <a class="dropdown-item" href="#">Something else here</a>
+                                    <div class="dropdown-divider">
+                                    </div> <a class="dropdown-item" href="#">Separated link</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav> <br><br>
+                <div class="jumbotron">
+                    <h2>
+                        안녕, CARATS!
+                    </h2>
+                    <p>
+                        Seventeen (Korean: 세븐틴; stylized in all caps or as SVT) is a South Korean boy band formed by Pledis Entertainment. The group consists of thirteen members: S.Coups, Jeonghan, Joshua, Jun, Hoshi, Wonwoo, Woozi, DK, Mingyu, The8, Seungkwan, Vernon, and Dino.
+
+                        The group debuted on May 26, 2015 with the extended play (EP) 17 Carat,[2] which became the longest-charting K-pop album of the year in the US[3] and the only rookie album to appear on Billboard's "10 Best K-Pop Albums of 2015" list.[4][5] Seventeen has released four studio albums, twelve EPs and three reissues.
+                    </p>
+                    <p>
+                        <a class="btn btn-primary btn-large" href="#">Learn more</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="list-group">
+                     <a href="#" class="list-group-item list-group-item-action active">Home</a>
+                    <div class="list-group-item">
+                    </div>
+                    <div class="list-group-item">
+                        <h4 class="list-group-item-heading">
+                            List Name
+                        </h4>
+                        <p class="list-group-item-text">
+                            <ol>
+                                <li>Scoups</li>
+                                <li>Jeonghan</li>
+                                <li>Joshua</li>
+                                <li>Jun</li>
+                                <li>Hoshi</li>
+                                <li>Wonwoo</li>
+                                <li>Woozi</li>
+                                <li>The8</li>
+                                <li>Mingyu</li>
+                                <li>DK</li>
+                                <li>Seungkwan</li>
+                                <li>Vernon</li>
+                                <li>Dino</li>
+                            </ol>
+                        </p>
+                    </div>
+                    <div class="list-group-item justify-content-between">
+                        <span class="badge badge-secondary badge-pill"></span>
+                    </div> <a href="#" class="list-group-item list-group-item-action active justify-content-between">Home <span class="badge badge-light badge-pill">14</span></a>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <h3 class="text-center">
+                    SEVENTEEN ' SECTOR 17 ' COMEBACK RECAP
+                </h3>
+                <p class="lead text-center">
+                    SECTOR 17 is <strong>SEVENTEEN's</strong>repackage of their 2022 full-length album, Face the Sun. In addition to the nine songs from it, four new songs are included—“Circles,” “_World,” “Fallin' Flower (Korean Ver.),” and “CHEERS”</em><small>—making it a version with a new design.</small>
+                </p>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>
+                                #
+                            </th>
+                            <th>
+                                PRODUCT
+                            </th>
+                            <th>
+                                
+                            </th>
+                            <th>
+                                TOTAL 
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="table-active">
+                            <td>
+                                1
+                            </td>
+                            <td>
+                                SEVENTEEN 4th ALBUM REPACKAGE 'SECTOR 17' ALBUM SALES
+                            </td>
+                            <td>
+                                24/07/2022
+                            </td>
+                            <td>
+                                3.335.489
+                            </td>
+                        </tr>
+                        <tr class="table-success">
+                            <td>
+                                2
+                            </td>
+                            <td>
+                                SEVENTEEN (세븐틴) '_WORLD' Official MV VIEWS
+                            </td>
+                            <td>
+                                21/12/2022
+                            </td>
+                            <td>
+                                60.884.083
+                            </td>
+                        </tr>
+                        <tr class="table-warning">
+                            <td>
+                                3
+                            </td>
+                            <td>
+                                SEVENTEEN (세븐틴) '_WORLD' Official MV COMMENTS
+                            </td>
+                            <td>
+                                21/12/2022
+                            </td>
+                            <td>
+                                148.376
+                            </td>
+                        </tr>
+                        <tr class="table-danger">
+                            <td>
+                                4
+                            </td>
+                            <td>
+                                SEVENTEEN (세븐틴) '_WORLD' Official MV LIKES
+                            </td>
+                            <td>
+                                21/12/2022
+                            </td>
+                            <td>
+                                1.100.000
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="col-md-12">
+                 
+                <address>
+                     <strong>5, </strong><br /> Bongeunsa-ro 67-gil, <br /> Seoul, South Korea<br /> <abbr title="Phone">P:</abbr> 02-548-1677
+                </address>
+            </div>
+        </div>
+    </div>
+    
+    <!--JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+</body>
+</html>
